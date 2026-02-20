@@ -11,15 +11,11 @@ package TallerBuilder;
 
 public class Hamburguesa {
 
-    // Atributos obligatorios
     private final String tipoPan;
     private final String tipoCarne;
-
-    // Atributos opcionales
     private final boolean queso;
     private final String ingredientesAdicionales;
 
-    // Constructor privado
     private Hamburguesa(Builder builder) {
         this.tipoPan = builder.tipoPan;
         this.tipoCarne = builder.tipoCarne;
@@ -56,11 +52,8 @@ public class Hamburguesa {
 
     public static class Builder {
 
-        // Obligatorios
         private final String tipoPan;
         private final String tipoCarne;
-
-        // Opcionales
         private boolean queso;
         private String ingredientesAdicionales;
 
